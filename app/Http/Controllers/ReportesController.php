@@ -9,6 +9,10 @@ class ReportesController extends Controller
 
     public function dashboard(){
 
+        $totalBallena = \App\Interaccion::where('expo','ballena')->count();
+
+        return $totalBallena;
+
         return view('dashboard');
     }
 

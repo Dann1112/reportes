@@ -57,11 +57,6 @@ return [
         'mongodb' => [
 
             'driver'   => 'mongodb',
-            //'host'     => env('DB_HOST', 'localhost'),
-            //'port'     => env('DB_PORT', 27017),
-            //'database' => env('DB_DATABASE'),
-            //'username' => env('DB_USERNAME'),
-            //'password' => env('DB_PASSWORD'),
             'host'     => 'ds259351.mlab.com',
             'port'     => '59351',
             'username' => 'trapos',
@@ -70,6 +65,15 @@ return [
             'options'  => [
                 'database' => 'museo' // sets the authentication database required by mongo 3
             ]
+            //'driver'   => 'mongodb',
+            //'host'     => 'ds113628.mlab.com',
+            //'port'     => '13628',
+            //'username' => 'dann1112',
+            //'password' => '4zulKr3m4',
+            //'database' => 'mongo-db',
+            //'options'  => [
+                //'database' => 'mongo-db' // sets the authentication database required by mongo 3
+            //]
         ],
 
         'pgsql' => [

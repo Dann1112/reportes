@@ -4,10 +4,10 @@ namespace App;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class User extends Eloquent{
+class Interaccion extends Eloquent{
 
     protected $connection = 'mongodb';
-    protected $collection = 'users';
+    protected $collection = 'visitors';
     protected $primaryKey = 'id';
 
 
