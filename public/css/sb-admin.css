@@ -3,6 +3,10 @@ html {
   min-height: 100%;
 }
 
+.back-color{
+  background-color: yellow;
+}
+
 body {
   overflow-x: hidden;
 }

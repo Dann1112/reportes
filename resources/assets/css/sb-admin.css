@@ -3,6 +3,8 @@ html {
   min-height: 100%;
 }
 
+
+
 body {
   overflow-x: hidden;
 }
@@ -475,4 +477,21 @@ footer.sticky-footer {
   body.sidenav-toggled footer.sticky-footer {
     width: calc(100% - 55px);
   }
+}
+
+#back-dark{
+  background-color:#011A27;
+}
+
+.back-dark{
+  background-color:#011A27;
+}
+
+.accent{
+  background-color: #E6DF44;
+}
+
+.accentFont{
+  background-color: #E6DF44;
+  color:black;
 }
