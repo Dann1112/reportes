@@ -1,7 +1,7 @@
 <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="background-color:#011A27">
         
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="{{route('home')}}">
+          <a class="nav-link" href="{{route('dashboard')}}">
             <i class="fas fa-tachometer-alt"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>

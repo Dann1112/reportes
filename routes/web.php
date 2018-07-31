@@ -29,7 +29,7 @@ Route::post('/login','UserController@login');
 Route::get('/registro','RegistrationController@index')->name('registro');
 Route::post('/registro','RegistrationController@store');
 
-Route::get('/prueba','RegistrationController@prueba');
+Route::get('/dashboard','ReportesController@dashboard')->name('dashboard');
 
 Route::get('/reportes/global', 'ReportesController@global')->name('global');
 Route::get('/reportes/encuesta', 'ReportesController@encuesta')->name('encuesta');

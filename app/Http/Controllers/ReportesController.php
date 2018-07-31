@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class ReportesController extends Controller
 {
 
+    public function dashboard(){
+
+        return view('dashboard');
+    }
+
     public function global(){
 
         return view('reportes.global');

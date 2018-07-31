@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#011A27">
-        <a class="navbar-brand" href="index.html">ImaginAdmin</a>
+    <a class="navbar-brand" href="{{route('dashboard')}}">IMAGIN.AR.IUM Admin</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
