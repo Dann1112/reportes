@@ -3,7 +3,7 @@
 @section('content')
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-  
+
   <!-- Navigation-->
   @include('partials.navigation')
 
@@ -12,6 +12,7 @@
 
         <hr>
         <h1 class="display-3 d-block text-center">@lang('global.global')</h1>
+        <h1 class="display-3 d-block text-center"></h1>
         <hr>
       
 <div class="row">
@@ -79,10 +80,10 @@
           var myPieChart = new Chart(ctx, {
             type: 'pie',
             data: {
-              labels: ["Exhibit1", "Exhibit2", "Exhibit3", "Exhibit4"], //CAMBIAR
+              labels: ["BALLENA", "TIBURON", "TIGRE"], //CAMBIAR
               datasets: [{
-                data: [105, 100, 85, 97], //CAMBIAR
-                backgroundColor: ['#39B7CD', '#0BB5FF ', '#5D8AA8 ', '#000080 '], //CAMBIAR
+                data: [{!! json_encode($xdiaBallena); !!}, {!! json_encode($xdiaTiburon); !!}, {!! json_encode($xdiaTigre); !!}], //CAMBIAR
+                backgroundColor: ['#39B7CD', '#0BB5FF ', '#5D8AA8 '], //CAMBIAR
               }],
             },
           });
@@ -94,10 +95,10 @@
     var myPieChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ["Exhibit1", "Exhibit2", "Exhibit3", "Exhibit4"], //CAMBIAR
+        labels: ["BALLENA", "TIBURON", "TIGRE"], //CAMBIAR
         datasets: [{
-          data: [456, 654, 487, 540], //CAMBIAR
-          backgroundColor: ['#F8DE7E', '#FADA5E', '#FFD300', '#F9A602'], //CAMBIAR
+          data: [{!! json_encode($xsemanaBallena); !!}, {!! json_encode($xsemanaTiburon); !!}, {!! json_encode($xsemanaTigre); !!}], //CAMBIAR
+          backgroundColor: ['#F8DE7E', '#FADA5E', '#FFD300'], //CAMBIAR
         }],
       },
     });
@@ -109,10 +110,10 @@
     var myPieChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ["Exhibit1", "Exhibit2", "Exhibit3", "Exhibit4"], //CAMBIAR
+        labels: ["BALLENA", "TIBURON", "TIGRE"], //CAMBIAR
         datasets: [{
-          data: [1655, 2300, 1780, 2000], //CAMBIAR
-          backgroundColor: ['#FF2400', '#ED2939', '#C21807', '#B22222'], //CAMBIAR
+          data: [{!! json_encode($promedioMesBallena); !!}, {!! json_encode($promedioMesTiburon); !!}, {!! json_encode($promedioMesTigre); !!}], //CAMBIAR
+          backgroundColor: ['#FF2400', '#ED2939', '#C21807'], //CAMBIAR
         }],
       },
     });
@@ -137,7 +138,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 20,
       pointBorderWidth: 2,
-      data: [1000, 3016, 2626, 1839, 1828, 2868, 3127, 3325, 2584, 2415, 3265, 3198],
+      data: [ {!! json_encode($meses[0]); !!},  {!! json_encode($meses[1]); !!}, {!! json_encode($meses[2]); !!}, {!! json_encode($meses[3]); !!}, {!! json_encode($meses[4]); !!},{!! json_encode($meses[5]); !!},{!! json_encode($meses[6]); !!},{!! json_encode($meses[7]); !!},{!! json_encode($meses[8]); !!},{!! json_encode($meses[9]); !!},{!! json_encode($meses[10]); !!},{!! json_encode($meses[11]); !!}],
     }],
   },
   options: {
@@ -156,7 +157,7 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 4000,
+          max: 100,
           maxTicksLimit: 10
         },
         gridLines: {

@@ -3,5 +3,6 @@
 return [
     "global" => "Global Interactions",
     "mensual" => "Monthly Interactions",
-    "actualizacion" => "Last Update: "
+    "actualizacion" => "Last Update: ",
+    "porExhibicion" => "By Exhibition:"
 ];
